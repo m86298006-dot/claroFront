@@ -27,7 +27,7 @@ function MainApp() {
       <main className="main">
         <div className="intro-text">
           <p>
-            Realiza el pago de la factura de tus servicios Claro, compra paquetes y haz
+            Realiza el pago de la factura de tus servicios Claro y haz
             recargas de manera fácil y desde donde quieras. También, puedes inscribir tu
             tarjeta de crédito para realizar el pago de tus facturas automáticamente.
           </p>
@@ -42,16 +42,8 @@ function MainApp() {
           />
         )}
 
-        {selectedService?.label === "Pago de Facturas" && (
+        {selectedService && (
           <FacturaForm onBack={handleBack} />
-        )}
-
-        {selectedService?.label !== "Pago de Facturas" && selectedService && (
-          <div className="box">
-            <h2>{selectedService.label}</h2>
-            <p>Aquí iría el formulario de {selectedService.label}</p>
-            <button onClick={handleBack}>Volver</button>
-          </div>
         )}
       </main>
     </div>

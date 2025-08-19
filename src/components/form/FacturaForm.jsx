@@ -53,19 +53,7 @@ function FacturaForm({ onBack }) {
             <span>Hogar y Multiplay</span>
           </label>
 
-          <label className={`service-option ${tipoServicio === "Equipo" ? "selected" : ""}`}>
-            <input
-              type="radio"
-              name="service"
-              value="Equipo"
-              onChange={(e) => setTipoServicio(e.target.value)}
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3208/3208726.png"
-              alt="Equipo"
-            />
-            <span>Equipo</span>
-          </label>
+        
         </div>
 
         <div className="form-group">

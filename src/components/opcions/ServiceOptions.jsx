@@ -4,7 +4,7 @@ function ServiceOptions({ onSelect }) {
   const options = [
     { id: 1, label: "Pago de Facturas", icon: "🧾" },
     { id: 2, label: "Recargas", icon: "📱" },
-    { id: 3, label: "Paquetes", icon: "📦" },
+ 
   ]
 
   return (

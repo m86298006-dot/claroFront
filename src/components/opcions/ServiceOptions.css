@@ -4,6 +4,7 @@
   gap: 25px;
   margin: 40px auto;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .service-card {
@@ -15,10 +16,11 @@
   transition: 0.2s;
   text-align: center;
   width: 180px;
+  box-sizing: border-box;
 }
 
 .service-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-3px);
 }
 
@@ -40,4 +42,19 @@
   font-weight: 500;
   margin: 0;
   color: #333;
+}
+
+/* 🌐 RESPONSIVE */
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-card {
+    width: 90%;
+    max-width: 300px;
+  }
 }
