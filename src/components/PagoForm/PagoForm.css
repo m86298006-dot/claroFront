@@ -1,0 +1,136 @@
+/* Cajita centrada tipo tarjeta */
+.pago-box {
+  max-width: 450px;   /* ancho fijo */
+  margin: 40px auto;  /* centrado en la página */
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Título */
+.pago-box h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Campo de valor */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Opciones de pago */
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.payment-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+
+.payment-option img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.payment-option span {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* Efecto seleccionado */
+.payment-option.selected {
+  border: 2px solid #e60000; /* rojo Claro */
+  background: #fff5f5;
+}
+
+/* Botones */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-cancel,
+.btn-continue {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-cancel {
+  background: #888;
+  color: #fff;
+}
+
+.btn-cancel:hover {
+  background: #666;
+}
+
+.btn-continue {
+  background: #e60000;
+  color: #fff;
+}
+
+.btn-continue:hover {
+  background: #b30000;
+}
+/* Recibo */
+.recibo {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.recibo p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.recibo .total {
+  font-size: 18px;
+  color: #e60000;
+  font-weight: bold;
+}
+
+.mensaje-conv {
+  font-size: 14px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}

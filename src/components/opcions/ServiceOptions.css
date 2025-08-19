@@ -1,0 +1,43 @@
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 25px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  width: 180px;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
+.service-card .icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #e30613;
+}
+
+.service-card p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}

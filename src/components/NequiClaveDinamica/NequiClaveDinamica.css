@@ -1,0 +1,111 @@
+.nequi-container {
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.nequi-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #230b26;
+  margin-bottom: 15px;
+}
+
+.nequi-subtitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.nequi-text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.clave-espacios {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.clave-box {
+  width: 35px;
+  height: 35px;
+  border-bottom: 2px solid #000;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.key {
+  height: 60px;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #1e0120;           /* 👈 texto negro */
+  border: none;
+background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+
+.key:hover {
+  background: #f7f7f7;   /* efecto al pasar mouse */
+}
+
+.key:active {
+  background: #eaeaea;   /* efecto al hacer click */
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.btn-cancelar {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #000;
+background-color: transparent;
+  cursor: pointer;
+  color: #000;
+}
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #230b26;
+  z-index: 1000;
+}
+
+.spinner {
+  border: 4px solid #eee;
+  border-top: 4px solid #230b26;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

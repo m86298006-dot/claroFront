@@ -1,0 +1,32 @@
+.navbar-ba {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra el contenido */
+  
+  background: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+}
+
+.navbar-logo {
+  height: 80px;
+
+}
+
+.navbar-salir {
+  position: absolute;
+  right: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+.navbar-salir:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,148 @@
+body {
+  background: #f8f8f8;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+.container {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.rojo {
+  color: #e30613; /* rojo oficial de Claro */
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.step {
+  flex: 1;
+  font-size: 14px;
+  padding: 10px;
+  border-bottom: 2px solid lightgray;
+  color: #555;
+}
+
+.step.active {
+  font-weight: bold;
+  color: #e30613;
+  border-bottom: 3px solid #e30613;
+}
+
+.main .box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 260px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: #e30613;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #b0000d;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #e30613;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.navbar-left nav a:hover {
+  text-decoration: underline;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flag {
+  font-size: 18px;
+}
+.intro-text {
+  max-width: 900px;      /* ancho máximo para que no se extienda demasiado */
+  margin: 20px auto;     /* lo centra horizontalmente */
+  text-align: center;    /* centra el texto */
+  font-size: 16px;       /* tamaño de letra */
+  line-height: 1.6;      /* espacio entre líneas para que respire */
+  color: #333;           /* color más suave que el negro puro */
+}
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e60000;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #cc0000;
+}

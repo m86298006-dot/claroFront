@@ -1,0 +1,140 @@
+/* Caja central */
+.banco-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.banco-container {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://www.bancolombia.com/wcm/connect/www.bancolombia.com-26918/113d8987-c158-44b3-9f0e-1990fe6dde1b/lines-productores-aplican.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_9O44G4S049MAD06H7SNS78IMS1-113d8987-c158-44b3-9f0e-1990fe6dde1b-ojAlfpX");
+}
+
+/* Título */
+.banco-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Texto */
+.banco-text {
+  color: #333;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* INPUT estilo Bancolombia */
+.form-group {
+  margin-top: 15px;
+  text-align: left;
+  display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.banco-box input {
+    margin-top: 10px;
+ border: none;
+  outline: none;
+  border-bottom: #000;
+  font-size: 1rem;
+ margin-bottom: 10px;
+  background: transparent;
+}
+
+.form-box .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+}
+
+.form-box svg {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+
+
+.form-box input::placeholder {
+  color: #555;
+}
+
+/* Link olvidar usuario */
+.link-olvide {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.link-olvide a {
+  color: #000;
+  text-decoration: none;
+}
+
+.link-olvide a:hover {
+  text-decoration: underline;
+}
+
+/* BOTONES */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-volver {
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-volver:hover {
+  background: #f5f5f5;
+}
+
+.btn-continuar {
+  border: none;
+  background: #FFD200;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-continuar:hover {
+  background: #e6be00;
+}
+
+/* Footer */
+.banco-footer {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

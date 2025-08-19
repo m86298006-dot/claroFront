@@ -1,0 +1,116 @@
+/* FacturaForm.css */
+
+.factura-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.factura-box h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Opciones de servicio */
+.service-options {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.service-option {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+
+.service-option img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.service-option span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+.service-option.selected {
+  border: 2px solid #e60000;
+  background-color: #fff5f5;
+}
+
+/* Input cuenta */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Captcha simulado */
+.captcha-sim {
+  margin: 15px 0;
+  text-align: left;
+  fontar: 14px;
+}
+
+/* Botones */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-cancel {
+  background-color: #d32f2f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-cancel:hover {
+  background-color: #b71c1c;
+}
+
+.btn-continue {
+  background-color: #e60000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-continue:hover {
+  background-color: #cc0000;
+}
