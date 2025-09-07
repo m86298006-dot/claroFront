@@ -1,0 +1,121 @@
+/* ======== Contenedor principal ======== */
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background: #1d2026;
+  min-height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* ======== Tarjeta del formulario ======== */
+
+.checkout-card {
+ background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 480px;
+    max-width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    height: 50%;
+
+}
+
+.checkout-title {
+  font-size: 1.5rem;
+  color: #00b5ad;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.checkout-form label {
+  display: block;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.checkout-form input,
+.checkout-form select {
+  width: 90%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccd2da;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+  border-color: #00b5ad;
+  box-shadow: 0 0 6px rgba(0, 181, 173, 0.3);
+}
+
+.pay-button {
+  width: 95%;
+  background: linear-gradient(65deg, #0fb7b3 0%, #227b7a 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-button:hover {
+  background: linear-gradient(65deg, #227b7a 0%, #0fb7b3 100%);
+}
+
+/* ======== Resumen del pedido ======== */
+.checkout-summary {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+}
+
+.summary-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #555;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.summary-price {
+  font-weight: 600;
+  color: #444;
+}
+
+.summary-item.total {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00b5ad;
+  border-top: 2px solid #ddd;
+  margin-top: 15px;
+  padding-top: 12px;
+}
+
+.summary-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00b5ad;
+}
